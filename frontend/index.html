@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA - Astronomia do Dia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <main class="container">
+        <header>
+            <h1>NASA <span class="accent">APOD</span> Explorer</h1>
+            <p>Descubra o universo na data que você nasceu</p>
+        </header>
+
+        <section class="search-box">
+            <div class="input-group">
+                <label for="birth-date">Escolha uma data:</label>
+                <input type="date" id="birth-date">
+                <button id="search-btn">Explorar</button>
+            </div>
+        </section>
+
+        <section id="result" class="result-card hidden">
+            <div class="media-container" id="media-container">
+                <!-- Imagem ou Vídeo será inserido aqui -->
+            </div>
+            <div class="content">
+                <h2 id="title"></h2>
+                <p id="date-display" class="date-tag"></p>
+                <p id="explanation"></p>
+            </div>
+        </section>
+
+        <div id="loader" class="loader hidden">
+            <div class="spinner"></div>
+            <p>Navegando pelo espaço...</p>
+        </div>
+
+        <div id="error-msg" class="error-msg hidden"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
