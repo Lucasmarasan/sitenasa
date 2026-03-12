@@ -1,0 +1,11 @@
+backend/venv/
+backend/.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+node_modules/
+dist/
+build/
